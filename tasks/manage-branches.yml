@@ -26,6 +26,7 @@ params:
   BRANCH_RESOURCE_TEMPLATE: null
   GROUP_PER_BRANCH: null
   PIPELINE_COMMON_RESOURCES_TEMPLATE: null
+  docker-repo: null
 
 run:
   path: concourse-branch-manager/tasks/manage_branches.rb

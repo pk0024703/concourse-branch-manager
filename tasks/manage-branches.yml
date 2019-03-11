@@ -4,7 +4,7 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: docker-repo/tracker/busyboxplus
+    repository: ((docker-repo))/tracker/busyboxplus
     tag: ruby-git
 
 inputs:
@@ -26,7 +26,7 @@ params:
   BRANCH_RESOURCE_TEMPLATE: null
   GROUP_PER_BRANCH: null
   PIPELINE_COMMON_RESOURCES_TEMPLATE: null
-  docker-repo: null
+  docker-repo: ((docker-repo))
 
 run:
   path: concourse-branch-manager/tasks/manage_branches.rb

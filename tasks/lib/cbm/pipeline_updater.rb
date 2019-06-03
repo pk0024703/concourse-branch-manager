@@ -55,6 +55,9 @@ module Cbm
 
     def download_fly
       log 'Downloading fly executable...'
+      log "username- #{username}"
+      log "password- #{password}"
+      log "url- #{url}"
 
       fly_download_url = "#{url}/api/v1/cli?arch=amd64&platform=linux"
       read_binary_open_mode = 'rb'
